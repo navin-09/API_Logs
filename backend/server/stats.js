@@ -3,7 +3,6 @@ const { pgClient } = require("../helpers/pg");
 const router = require("express").Router();
 
 router.get("/api_stats", async (req, res) => {
-  console.log("api stats called !");
   const { type, start_time, end_time } = req.query;
 
   if (!type) return res.status(400).send("type is required");

@@ -1,13 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import {
   BarChart,
   Bar,
   CartesianGrid,
   Legend,
-  ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
@@ -105,8 +103,6 @@ export default function Dashboard() {
 
     getData();
   }, [startDate, endDate]);
-
-  console.log({ statsOverTimeData });
 
   return (
     <>
